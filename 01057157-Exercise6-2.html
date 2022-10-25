@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>01057157-Exercise6-2</title>
+    <style>
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%; background: #eee; font-weight: 400;  color: #222;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px; line-height: 26px; padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px; margin: 0px auto 0px;  border-radius: 3px;  margin-top: 50px;
+            background: #fff; box-shadow: 1px 1px 2px #DAD7D7; padding: 40px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .desc{
+            text-align: left;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+            font-size: larger;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color:darkgoldenrod;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: larger;
+        }
+
+        .row:after{
+            clear: both;
+            display: table;
+            content: "";
+        }
+
+        .column{
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .column1{
+            float: left;
+            width: 30%;
+            padding: 10px;
+        }
+
+        .column2{
+            float: left;
+            width: 70%;
+            padding: 10px;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display:inline;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 100%;
+        }
+        
+        .name{
+            font-size: 13pt;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: grey;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: darkgoldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">Bryan</span>
+                <span class="last-name">Albert</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <a href="mailto:bryan.albert@gmail.com">bryan.albert@gmail.com</a>
+                <span class="separator"></span>
+                <span class="phone">Phone: </span>
+                <a href="tel:+886938888888">093-888-8888</a>
+                
+            </div>
+
+            <div>
+                <img src="bryanalbert.png" width="50%">
+            </div>
+
+            <div class="about">
+                <span class="position">Game Developer</span>
+                <span class="desc">
+                    I am a game developer with more than 7 years of experience creating a game. 
+                    I would like to work as a gaming developer to demonstrate my unique skills in designing, 
+                    emerging as well as project management so as to expand extremely modified video games in support of diverse users.
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Experience</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="row">
+                            <div class="column">
+                                <div class="left">
+                                    <div class="name">Supercell</div>
+                                    <div class="addr">Helsinki, Finland</div>
+                                    <div class="duration">Jan 2012 - Feb 2016</div><br>
+                                </div>
+                                <div class="left">
+                                    <div class="name">Game developer</div>
+                                    <div class="desc">Created Android and iOs games which are live on their respective stores.<br>
+                                        Developed clash of clans, clash royale, hayday, boom beach.</div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="left">
+                                    <div class="name">Tencent</div>
+                                    <div class="addr">Shenzhen, Guangdong, China</div>
+                                    <div class="duration">April 2016 - Feb 2021</div><br>
+                                </div>
+                                <div class="left">
+                                    <div class="name">Game developer</div>
+                                    <div class="desc">Participated in application design by providing feedback on available
+                                        technology options.<br>
+                                        Developed honor of king, call of duty, PUBG mobile.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Education</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Stanford University</div>
+                            <div class="addr">450 Serra Mall, Stanford, CA 94305, United States</div>
+                            <div class="duration">September 2007 - June 2011</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        Badminton, programming, investing, game developing.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="section">
+                        <div class="section__title">Computer Skills</div>
+                        <div class="skills">
+                            <div class="skills__item">
+                                <div class="left">
+                                    <div>
+                                        Microsoft office
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <input id="ck1" type="checkbox" checked />
+                                    <label for="ck1"></label>
+                                    <input id="ck2" type="checkbox" checked />
+                                    <label for="ck2"></label>
+                                    <input id="ck3" type="checkbox" checked/>
+                                    <label for="ck3"></label>
+                                    <input id="ck4" type="checkbox" checked/>
+                                    <label for="ck4"></label>
+                                    <input id="ck5" type="checkbox" checked/>
+                                    <label for="ck5"></label>
+        
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="skills__item">
+                            <div class="left">
+                                <div>
+                                    Stencly, CopperCube</div>
+                            </div>
+                            <div class="right">
+                                <input id="ck1" type="checkbox" checked />
+                                <label for="ck1"></label>
+                                <input id="ck2" type="checkbox" checked />
+                                <label for="ck2"></label>
+                                <input id="ck3" type="checkbox" checked/>
+                                <label for="ck3"></label>
+                                <input id="ck4" type="checkbox" checked/>
+                                <label for="ck4"></label>
+                                <input id="ck5" type="checkbox"/>
+                                <label for="ck5"></label>
+                            </div>
+                        </div>
+        
+                        <div class="skills__item">
+                            <div class="left">
+                                <div>
+                                    Unity3D, Unreal engine</div>
+                            </div>
+                            <div class="right">
+                                <input id="ck1" type="checkbox" checked />
+                                <label for="ck1"></label>
+                                <input id="ck2" type="checkbox" checked />
+                                <label for="ck2"></label>
+                                <input id="ck3" type="checkbox" checked/>
+                                <label for="ck3"></label>
+                                <input id="ck4" type="checkbox" checked/>
+                                <label for="ck4"></label>
+                                <input id="ck5" type="checkbox" checked/>
+                                <label for="ck5"></label>
+                            </div>
+                        </div>
+        
+                        <div class="skills__item">
+                            <div class="left">
+                                <div>
+                                    AppGameKit, GameGuru</div>
+                            </div>
+                            <div class="right">
+                                <input id="ck1" type="checkbox" checked />
+                                <label for="ck1"></label>
+                                <input id="ck2" type="checkbox" checked />
+                                <label for="ck2"></label>
+                                <input id="ck3" type="checkbox" checked/>
+                                <label for="ck3"></label>
+                                <input id="ck4" type="checkbox" checked/>
+                                <label for="ck4"></label>
+                                <input id="ck5" type="checkbox"/>
+                                <label for="ck5"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="section">
+                        <div class="section__title">Interpersonal Skill</div>
+                        <div class="skills">
+                            <div class="skills__item">
+                                <div class="left">
+                                    <div>
+                                        Analytical skill
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <input id="ck1" type="checkbox" checked />
+                                    <label for="ck1"></label>
+                                    <input id="ck2" type="checkbox" checked />
+                                    <label for="ck2"></label>
+                                    <input id="ck3" type="checkbox" checked/>
+                                    <label for="ck3"></label>
+                                    <input id="ck4" type="checkbox" checked/>
+                                    <label for="ck4"></label>
+                                    <input id="ck5" type="checkbox" checked/>
+                                    <label for="ck5"></label>
+        
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="skills__item">
+                            <div class="left">
+                                <div>
+                                    Communication skills</div>
+                            </div>
+                            <div class="right">
+                                <input id="ck1" type="checkbox" checked />
+                                <label for="ck1"></label>
+                                <input id="ck2" type="checkbox" checked />
+                                <label for="ck2"></label>
+                                <input id="ck3" type="checkbox" checked/>
+                                <label for="ck3"></label>
+                                <input id="ck4" type="checkbox" checked/>
+                                <label for="ck4"></label>
+                                <input id="ck5" type="checkbox"/>
+                                <label for="ck5"></label>
+                            </div>
+                        </div>
+        
+                        <div class="skills__item">
+                            <div class="left">
+                                <div>
+                                    Detail oriented</div>
+                            </div>
+                            <div class="right">
+                                <input id="ck1" type="checkbox" checked />
+                                <label for="ck1"></label>
+                                <input id="ck2" type="checkbox" checked />
+                                <label for="ck2"></label>
+                                <input id="ck3" type="checkbox" checked/>
+                                <label for="ck3"></label>
+                                <input id="ck4" type="checkbox" checked/>
+                                <label for="ck4"></label>
+                                <input id="ck5" type="checkbox" checked/>
+                                <label for="ck5"></label>
+                            </div>
+                        </div>
+        
+                        <div class="skills__item">
+                            <div class="left">
+                                <div>
+                                    Teamwork</div>
+                            </div>
+                            <div class="right">
+                                <input id="ck1" type="checkbox" checked />
+                                <label for="ck1"></label>
+                                <input id="ck2" type="checkbox" checked />
+                                <label for="ck2"></label>
+                                <input id="ck3" type="checkbox" checked/>
+                                <label for="ck3"></label>
+                                <input id="ck4" type="checkbox" checked/>
+                                <label for="ck4"></label>
+                                <input id="ck5" type="checkbox"/>
+                                <label for="ck5"></label>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="left">
+                                <div>
+                                    Time management</div>
+                            </div>
+                            <div class="right">
+                                <input id="ck1" type="checkbox" checked />
+                                <label for="ck1"></label>
+                                <input id="ck2" type="checkbox" checked />
+                                <label for="ck2"></label>
+                                <input id="ck3" type="checkbox" checked/>
+                                <label for="ck3"></label>
+                                <input id="ck4" type="checkbox" checked/>
+                                <label for="ck4"></label>
+                                <input id="ck5" type="checkbox"/>
+                                <label for="ck5"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
